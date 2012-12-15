@@ -216,17 +216,12 @@ fi
 
 %postun -p /sbin/ldconfig
 
-%clean
-rm -rf "$RPM_BUILD_ROOT"
+%lang_package -f zypp
 
-%files -f zypp.lang
+%files 
 %defattr(-,root,root)
 %dir               %{_sysconfdir}/zypp
-%if 0%{?fedora_version} || 0%{?rhel_version} >= 600 || 0%{?centos_version} >= 600
-%{_sysconfdir}/zypp/repos.d
-%else
 %dir               %{_sysconfdir}/zypp/repos.d
-%endif
 %dir               %{_sysconfdir}/zypp/services.d
 %dir               %{_sysconfdir}/zypp/vendors.d
 %dir               %{_sysconfdir}/zypp/multiversion.d
