@@ -1,3 +1,6 @@
+* Wed Jan 16 2013 Anas Nashif <anas.nashif@intel.com> accepted/trunk/20121215.174640@4a666b9
+- Use tizen-release as default release package
+
 * Sat Dec 15 2012 Anas Nashif <anas.nashif@intel.com> 12.3.0@f82e1bb
 - split locale
 
