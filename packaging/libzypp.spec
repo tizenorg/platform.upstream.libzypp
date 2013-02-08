@@ -3,7 +3,7 @@ License:        GPL-2.0+
 Group:          System/Packages
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Summary:        Package, Patch, Pattern, and Product Management
-Version:        12.3.0
+Version:        12.8.0
 Release:        1
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}-rpmlintrc
