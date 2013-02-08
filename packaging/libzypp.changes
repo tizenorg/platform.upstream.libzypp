@@ -1,3 +1,6 @@
+* Thu Feb 07 2013 Anas Nashif <anas.nashif@intel.com> 12.8.0@6fdb435
+- Update to 12.8.0
+
 * Wed Jan 16 2013 Anas Nashif <anas.nashif@intel.com> accepted/trunk/20121215.174640@4a666b9
 - Use tizen-release as default release package
 
