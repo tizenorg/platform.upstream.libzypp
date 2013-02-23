@@ -1,7 +1,6 @@
 Name:           libzypp
 License:        GPL-2.0+
 Group:          System/Packages
-BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Summary:        Package, Patch, Pattern, and Product Management
 Version:        12.8.0
 Release:        1
@@ -29,6 +28,8 @@ BuildRequires:  pkg-config
 BuildRequires:  libsolv-devel
 Requires:       libsolv-tools
 
+# should be recommends
+Requires:       lsof
 
 BuildRequires:  expat-devel
 
@@ -220,6 +221,7 @@ fi
 
 %files 
 %defattr(-,root,root)
+%license           COPYING
 %dir               %{_sysconfdir}/zypp
 %dir               %{_sysconfdir}/zypp/repos.d
 %dir               %{_sysconfdir}/zypp/services.d
