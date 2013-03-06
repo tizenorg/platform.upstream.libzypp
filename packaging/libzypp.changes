@@ -1,3 +1,6 @@
+* Wed Mar 06 2013 Anas Nashif <anas.nashif@intel.com> accepted/trunk/20130223.004241@82e47ce
+- Enable libproxy support
+
 * Fri Feb 22 2013 Anas Nashif <anas.nashif@intel.com> accepted/trunk/20130208.050406@4dec040
 - require lsof (TZPC-988)
 
