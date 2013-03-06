@@ -22,6 +22,7 @@ BuildRequires:  doxygen
 BuildRequires:  gcc-c++ >= 4.6
 BuildRequires:  gettext-devel
 BuildRequires:  libxml2-devel
+BuildRequires:  pkgconfig(libproxy-1.0)
 
 BuildRequires:  pkg-config
 
