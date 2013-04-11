@@ -1,3 +1,6 @@
+* Thu Apr 11 2013 Anas Nashif <anas.nashif@intel.com> 12.11.0@dd0d997
+- Update to 12.11.0
+
 * Wed Mar 06 2013 Anas Nashif <anas.nashif@intel.com> accepted/trunk/20130223.004241@82e47ce
 - Enable libproxy support
 
