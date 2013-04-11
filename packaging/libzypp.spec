@@ -1,8 +1,8 @@
 Name:           libzypp
 License:        GPL-2.0+
-Group:          System/Packages
+Group:          System/Package Management
 Summary:        Package, Patch, Pattern, and Product Management
-Version:        12.8.0
+Version:        12.11.0
 Release:        1
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}-rpmlintrc
@@ -77,7 +77,7 @@ Requires:       libudev-devel
 Requires:       cmake
 Requires:       libcurl-devel >= %{min_curl_version}
 Requires:       libsolv-devel
-Group:          System/Packages
+Group:          Development/Libraries
 
 %description -n libzypp-devel
 Package, Patch, Pattern, and Product Management - developers files
