@@ -6,6 +6,7 @@ Version:        12.11.0
 Release:        1
 Source:         %{name}-%{version}.tar.bz2
 Source1:        %{name}-rpmlintrc
+Source1001: 	libzypp.manifest
 
 # Features we provide (update doc/autoinclude/FeatureTest.doc):
 Provides:       libzypp(plugin) = 0
@@ -95,6 +96,7 @@ Authors:
 
 %prep
 %setup -q
+cp %{SOURCE1001} .
 
 %build
 mkdir build
@@ -221,6 +223,7 @@ fi
 %lang_package -f zypp
 
 %files 
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %license           COPYING
 %dir               %{_sysconfdir}/zypp
@@ -241,6 +244,7 @@ fi
 %doc %{_mandir}/man5/locks.5.*
 
 %files devel
+%manifest %{name}.manifest
 %defattr(-,root,root)
 %{_libdir}/libzypp.so
 %{_docdir}/%{name}
