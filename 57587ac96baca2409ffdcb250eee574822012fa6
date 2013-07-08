@@ -1,0 +1,8 @@
+Change-Id: I57587ac96baca2409ffdcb250eee574822012fa6
+Code-Review+2: Ryan Ware <ware@linux.intel.com>
+Verified+1: Ryan Ware <ware@linux.intel.com>
+Submitted-by: Ryan Ware <ware@linux.intel.com>
+Submitted-at: Mon, 08 Jul 2013 09:40:02 -0700
+Reviewed-on: https://review.tizen.org/gerrit/4824
+Project: platform/upstream/libzypp
+Branch: refs/heads/tizen
