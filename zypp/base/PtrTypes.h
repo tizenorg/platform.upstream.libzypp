@@ -13,6 +13,7 @@
 #ifndef ZYPP_BASE_PTRTYPES_H
 #define ZYPP_BASE_PTRTYPES_H
 
+#include <iosfwd>
 #include <string>
 
 #include <boost/scoped_ptr.hpp>
@@ -23,6 +24,12 @@
 ///////////////////////////////////////////////////////////////////
 namespace zypp
 { /////////////////////////////////////////////////////////////////
+
+  namespace str
+  {
+    // printing void* (prevents us from including <ostream>)
+    std::string form( const char * format, ... ) __attribute__ ((format (printf, 1, 2)));
+  }
 
     /** \defgroup ZYPP_SMART_PTR Smart pointer types
      *  Smart pointer types.
@@ -127,7 +134,7 @@ namespace std
   inline std::ostream & operator<<( std::ostream & str, const zypp::shared_ptr<void> & obj )
   {
     if ( obj )
-      return str << (void*)obj.get();
+      return str << zypp::str::form( "%p", (void*)obj.get() );
     return str << std::string("NULL");
   }
 
@@ -142,11 +149,7 @@ namespace std
   /** \overload specialize for void */
   template<>
   inline std::ostream & dumpOn( std::ostream & str, const zypp::shared_ptr<void> & obj )
-  {
-    if ( obj )
-      return str << (void*)obj.get();
-    return str << std::string("NULL");
-  }
+  { return str << obj; }
 
   /** \relates zypp::intrusive_ptr Stream output. */
   template<class _D>
