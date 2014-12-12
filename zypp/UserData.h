@@ -61,7 +61,7 @@ namespace zypp
 
     /** \relates UserData Stream output */
     inline std::ostream & operator<<( std::ostream & str, const UserData & obj )
-    { return str << "UserData(" << obj.type() << ")";}
+    { return str << std::string("UserData(") << obj.type() << std::string(")");}
 
   } // namespace callback
   ///////////////////////////////////////////////////////////////////
